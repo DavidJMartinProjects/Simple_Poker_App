@@ -57,5 +57,4 @@ public class Card implements Comparable<Card>{
 		int result = Integer.compare(o.value, this.value);
 		return result;
 	}
-
 }

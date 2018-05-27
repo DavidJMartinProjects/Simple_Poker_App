@@ -10,6 +10,7 @@ public class Dealer {
 
 	public void dealHands() {
 		myDeck.initialise_deck();
+		System.out.println("The Dealer is dealing 2 hands...\n");
 
 		int cardsInDeck = 52;
 		for (int i = 0; i < 10; i++) {
@@ -31,7 +32,6 @@ public class Dealer {
 	public void showHands() {
 		System.out.println("--- Player 1 ---");
 		System.out.println(player1);
-		System.out.println();
 		System.out.println("--- Player 2 ---");
 		System.out.println(player2);
 	}
