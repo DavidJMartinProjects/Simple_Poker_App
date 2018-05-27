@@ -1,9 +1,11 @@
 package com.poker;
 
+import java.util.List;
+import java.util.ArrayList;
 import java.util.TreeSet;
 
 public class Hand {
-	TreeSet<Card> hand = new TreeSet<>();
+	List<Card> hand = new ArrayList<>();
 
 	@Override
 	public String toString() {

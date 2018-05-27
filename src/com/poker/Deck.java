@@ -47,7 +47,7 @@ public class Deck {
 				theDeck.add(myCard);
 			}
 		}
-		System.out.println("Deck Initialised...");
+		System.out.println("Deck Initialised...\n");
 	}
 
 	public void showDeck() {
