@@ -26,7 +26,30 @@ public class Card implements Comparable<Card>{
 
 	@Override
 	public String toString() {
-		return "Card [value=" + value + ", suit=" + suit + "] \n";
+		String cardValue = new String();
+		
+		switch(this.value) {
+			case 11 : {
+				cardValue = "Jack";
+				break;
+			}
+			case 12 : {
+				cardValue = "Queen";
+				break;
+			}
+			case 13 : {
+				cardValue = "King";
+				break;
+			}
+			case 14 : {
+				cardValue = "Ace";
+				break;
+			}
+			default : {
+				cardValue = String.valueOf(value);
+			}
+		}
+		return "Card [value=" + cardValue + ", suit=" + suit + "] \n";
 	}
 
 	@Override
