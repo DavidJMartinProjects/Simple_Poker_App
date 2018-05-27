@@ -39,5 +39,25 @@ public class Dealer {
 	public void startGame() {
 		dealHands();
 		showHands();
+		evaluate(player1);
+//		evaluate(player2);
 	}
+	
+	public void evaluate(Hand aHand) {
+		if(aPair(aHand) >= 1) {
+			System.out.println("You have a Pair!");
+		}
+	}
+	
+	public int aPair(Hand player) {
+		int check = 0;
+		for(int i=0; i<5; i++) {
+			if(player.hand.get(i).getValue() == player.hand.get(4).getValue()) {
+				check++;
+			}				
+		}
+		System.out.println("Check : " +check);
+		return check;
+	}
+	
 }

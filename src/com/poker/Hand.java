@@ -15,5 +15,4 @@ public class Hand {
 		}		
 		return myString;
 	}	
-	
 }
