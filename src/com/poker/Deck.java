@@ -1,11 +1,18 @@
 package com.poker;
 
-import java.util.Random;
 import java.util.Stack;
 
 public class Deck {
 
 	private Stack<Card> theDeck = new Stack<Card>();
+	
+	public Stack<Card> getTheDeck() {
+		return theDeck;
+	}
+
+	public void setTheDeck(Stack<Card> theDeck) {
+		this.theDeck = theDeck;
+	}
 
 	public void initialise_deck() {
 
@@ -35,7 +42,7 @@ public class Deck {
 				}
 			}
 
-			for (int value = 2; value < 14; value++) {
+			for (int value = 2; value < 15; value++) {
 				Card myCard = new Card(value, theSuit);
 				theDeck.add(myCard);
 			}

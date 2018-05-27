@@ -1,6 +1,6 @@
 package com.poker;
 
-public class Card {
+public class Card implements Comparable<Card>{
 	
 	private int value;
 	private String suit;
@@ -26,6 +26,13 @@ public class Card {
 
 	@Override
 	public String toString() {
-		return "Card [value=" + value + ", suit=" + suit + "]";
-	}	
+		return "Card [value=" + value + ", suit=" + suit + "] \n";
+	}
+
+	@Override
+	public int compareTo(Card o) {
+		int result = Integer.compare(o.value, this.value);
+		return result;
+	}
+
 }
